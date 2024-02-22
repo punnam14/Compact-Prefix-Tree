@@ -1,3 +1,4 @@
+# Compact Prefix Tree
 Implemented a Dictionary ADT with extra functionality of being able to find the closest entries in the dictionary to the given invalid word using a compact prefix tree. <br> <br>
 
 ![Alt text for the image](https://raw.githubusercontent.com/punnam14/Compact-Prefix-Tree/main/Tree%20Images/Screenshot%202024-02-21%20at%209.22.22%20PM.png) <br><br>
