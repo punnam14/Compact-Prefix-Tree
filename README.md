@@ -1,51 +1,7 @@
-Implemented a Dictionary ADT with extra functionality of being able to find the closest entries in the dictionary to the given invalid word using a compact prefix tree.
+Implemented a Dictionary ADT with extra functionality of being able to find the closest entries in the dictionary to the given invalid word using a compact prefix tree. <br> <br>
 
-CompactPrefixTree test = new CompactPrefixTree();
-
-test.add("accer");                ac                
-test.add("acrobats");               cer*  
-test.add("acro");                   ro*
-test.add("actor");                     bats*
-test.add("cat");                    tor*
-test.add("carts");                ba
-test.add("carted");                 ll*
-test.add("crispy");                 sket*
-test.add("crispyness");           c        
-test.add("ball");                   a
-test.add("basket");                   rt
-test.add("dog");                        ed*
-test.add("donkey");                     s*
-test.add("egg");                      t*
-test.add("egregious");              rispy*
-test.add("dogmatic");                 ness*
-                                  do
-                                    g*
-                                      matic*
-                                    nkey*
-                                  eg
-                                    g*
-                                    regious*
-
-test.suggest("camera", 20);
-
-THE ARRAY OF RETURNED WORDS :
-
-element added: carted           |
-element added: carts            |
-element added: cat              |
-element added: crispy           |
-element added: crispyness      _| c exhausted
-element added: accer            |
-element added: acro             |
-element added: acrobats         | 
-element added: actor           _| a exhausted
-element added: ball             | 
-element added: basket           | b exhausted
-element added: dog             _| 
-element added: dogmatic         |
-element added: donkey           | d exhausted
-element added: egg              |
-element added: egregious       _| e exhausted and all words in tree exhausted - all words added to array
+![Alt text for the image](https://raw.githubusercontent.com/punnam14/Compact-Prefix-Tree/main/Tree%20Images/Screenshot%202024-02-21%20at%209.22.22%20PM.png) <br><br>
+![Alt text for the image](https://raw.githubusercontent.com/punnam14/Compact-Prefix-Tree/main/Tree%20Images/Screenshot%202024-02-21%20at%209.22.42%20PM.png) <br> <br>
 
 the word passed was camera, camera does not exist in our tree check method will return false and 
 the code goes to else loop in suggest
